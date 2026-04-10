@@ -1,0 +1,21 @@
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+fraud-shield:
+  scoring:
+    default-weight: 1.0
+    rule-weights:
+      BLACKLIST: 3.0
+      REPEAT_OFFENDER: 2.5
+      VELOCITY: 2.0
+      GEO_ANOMALY: 1.5
+      CARD_BIN_RISK: 1.5
+      AMOUNT_THRESHOLD: 1.2
+      DEVICE_FINGERPRINT: 1.0
+      TIME_OF_DAY: 0.8
+    thresholds:
+      suspicious: 0.4
+      high-risk: 0.7
+      block: 0.9

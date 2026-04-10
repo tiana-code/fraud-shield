@@ -1,0 +1,13 @@
+package com.fraudshield.statemachine;
+
+public enum FraudEvent {
+    ANOMALY_DETECTED,
+    CHALLENGE_ISSUED,
+    CHALLENGE_PASSED,
+    CHALLENGE_FAILED,
+    MANUAL_REVIEW_REQUESTED,
+    REVIEW_CLEARED,
+    REVIEW_BLOCKED,
+    AUTO_ESCALATE,
+    WHITELIST_APPROVED
+}
