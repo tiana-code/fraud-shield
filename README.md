@@ -1,6 +1,6 @@
 # fraud-shield - Real-Time Fraud Detection Engine
 
-A self-contained fraud detection library with custom data structures, 8 composable fraud rules, and an antifraud state machine. Built for low-latency transaction scoring with no external ML dependencies.
+Fraud detection library: custom Bloom filter (MurmurHash3), Aho-Corasick pattern matcher, 8 composable rules, antifraud state machine. Java 21, zero ML dependencies.
 
 ## Features
 
